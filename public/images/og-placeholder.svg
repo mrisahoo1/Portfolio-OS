@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#030712"/>
+  <path d="M0 450C180 360 273 520 453 430C633 340 705 180 884 239C1012 281 1091 223 1200 152V630H0V450Z" fill="url(#g)" opacity="0.55"/>
+  <rect x="72" y="70" width="1056" height="490" rx="34" fill="#0f172a" fill-opacity="0.66" stroke="#22d3ee" stroke-opacity="0.28"/>
+  <text x="100" y="210" fill="#f8fafc" font-family="Arial, sans-serif" font-size="72" font-weight="700">Mrityunjay Sahoo</text>
+  <text x="104" y="285" fill="#67e8f9" font-family="Arial, sans-serif" font-size="34" font-weight="600">AI Engineer | GenAI, RAG &amp; Agentic AI</text>
+  <text x="104" y="370" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="28">Enterprise-grade AI systems across BFSI, legal, and industrial domains.</text>
+  <circle cx="996" cy="214" r="70" stroke="#22d3ee" stroke-width="2" opacity="0.55"/>
+  <circle cx="996" cy="214" r="24" fill="#22d3ee" opacity="0.5"/>
+  <defs><linearGradient id="g" x1="0" y1="630" x2="1200" y2="0"><stop stop-color="#0891b2"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+</svg>
