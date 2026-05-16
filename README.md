@@ -2,6 +2,16 @@
 
 Premium, recruiter-friendly AI Engineer portfolio built with Next.js App Router, TypeScript, Tailwind CSS, shadcn/ui-style components, lucide-react icons, and Framer Motion.
 
+## Live URL
+
+Use this stable production URL on resumes and recruitment websites:
+
+```text
+https://portfolio-os-orpin.vercel.app
+```
+
+This URL is the Vercel production alias for the `portfolio-os` project. It should remain the same as long as future deploys use the same linked Vercel project and production deployment command.
+
 ## Run locally
 
 ```bash
@@ -18,14 +28,38 @@ npm run build
 npm run start
 ```
 
-## Deploy to Vercel
+## Deploy to Vercel without changing the final URL
 
-1. Push this `portfolio` folder to a GitHub repository.
-2. In Vercel, click **Add New Project** and import the repository.
-3. Framework preset should auto-detect as **Next.js**.
-4. Build command: `npm run build`.
-5. Output is handled by Next.js automatically.
-6. Add your production domain in Vercel and update `metadataBase`, sitemap, robots, and JSON-LD URL in `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`, and `data/profile.ts`.
+This repository is linked to the Vercel project `portfolio-os`.
+
+Use this command after code changes:
+
+```bash
+vercel deploy --prod --yes
+```
+
+Do not use the generated deployment URL for resumes. Vercel will print a unique deployment URL on every deploy, but the stable resume URL remains:
+
+```text
+https://portfolio-os-orpin.vercel.app
+```
+
+If Vercel ever asks to link the project again, link it to the existing `portfolio-os` project. Do not create a new Vercel project unless you intentionally want a new URL.
+
+## GitHub workflow
+
+```bash
+git add -A
+git commit -m "describe your change"
+git push
+vercel deploy --prod --yes
+```
+
+GitHub repository:
+
+```text
+https://github.com/mrisahoo1/Portfolio-OS
+```
 
 ## Assets to replace
 
@@ -58,11 +92,19 @@ A commented API integration stub exists at `app/api/ask/route.ts`. To make it li
 3. Send the user question plus curated portfolio context to the model.
 4. Return grounded answers and keep confidential project details out of the prompt and response.
 
+## Navigation and demo strategy
+
+- `components/PortfolioOS.tsx` is the recruiter fast-path module that reduces long-scroll friction.
+- `components/SectionRail.tsx` is the desktop quick-jump rail.
+- `components/DemoLab.tsx` is reserved for public-safe demos and links.
+- Keep copyrighted company/client work summarized in `featuredProjects` or `moreProjects` with `source: "company"`.
+- Add linkable personal/showcase projects to `publicShowcaseProjects` with `source: "public"`.
+
 ## Adding blog posts later
 
 The Field Notes section is intentionally lightweight. For a full blog later, add MDX support and create a `content/notes` folder, or keep using `data/notes.ts` for simple local cards.
 
-## Navigation and demo strategy`n`n- `components/PortfolioOS.tsx` is the recruiter fast-path module that reduces long-scroll friction.`n- `components/SectionRail.tsx` is the desktop quick-jump rail.`n- `components/DemoLab.tsx` is reserved for public-safe demos and links.`n- Keep copyrighted company/client work summarized in `featuredProjects` or `moreProjects` with `source: "company"`.`n- Add linkable personal/showcase projects to `publicShowcaseProjects` with `source: "public"`.`n`n## Future upgrades
+## Future upgrades
 
 - Real LLM-powered Ask My Portfolio with grounded citations.
 - Dedicated project case-study pages with safe public architecture diagrams.
@@ -70,4 +112,3 @@ The Field Notes section is intentionally lightweight. For a full blog later, add
 - Privacy-friendly analytics.
 - GitHub project auto-sync for selected public repositories.
 - Dynamic Open Graph image generation.
-

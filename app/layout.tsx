@@ -9,7 +9,7 @@ const title = "Mrityunjay Sahoo | AI Engineer | GenAI, RAG & Agentic AI";
 const description = "Portfolio of Mrityunjay Sahoo, an AI Engineer building enterprise-grade Generative AI, RAG, and Agentic AI systems across BFSI, legal, and industrial domains.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mrityunjaysahoo.ai"),
+  metadataBase: new URL("https://portfolio-os-orpin.vercel.app"),
   title,
   description,
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mrityunjaysahoo.ai",
+    url: "https://portfolio-os-orpin.vercel.app",
     title,
     description,
     siteName: "Mrityunjay Sahoo Portfolio",
@@ -54,4 +54,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
+
 

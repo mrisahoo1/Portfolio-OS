@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://mrityunjaysahoo.ai";
+  const baseUrl = "https://portfolio-os-orpin.vercel.app";
   return [
     {
       url: baseUrl,
@@ -11,3 +11,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

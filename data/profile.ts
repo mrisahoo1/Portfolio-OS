@@ -39,7 +39,8 @@ export const jsonLdPerson = {
   name: profile.name,
   jobTitle: "AI Engineer",
   email: `mailto:${profile.email}`,
-  url: "https://mrityunjaysahoo.ai",
+  url: "https://portfolio-os-orpin.vercel.app",
   sameAs: [profile.linkedIn, profile.github],
   knowsAbout: profile.skills,
 };
+
