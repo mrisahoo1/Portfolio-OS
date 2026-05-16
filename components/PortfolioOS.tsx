@@ -4,10 +4,10 @@ import { profile } from "@/data/profile";
 import { Button } from "@/components/ui/button";
 
 const fastRoutes = [
-  { label: "Best AI proof", detail: "3 flagship systems", href: "#projects", icon: BrainCircuit },
-  { label: "Public demo lab", detail: "Showable projects", href: "#demo-lab", icon: PlayCircle },
+  { label: "Flagship AI work", detail: "Enterprise GenAI, RAG, and agents", href: "#projects", icon: BrainCircuit },
+  { label: "Public demos", detail: "Live projects and walkthroughs", href: "#demo-lab", icon: PlayCircle },
   { label: "Experience", detail: "Role timeline", href: "#work", icon: BriefcaseBusiness },
-  { label: "AI stack", detail: "Filter by category", href: "#stack", icon: Layers3 },
+  { label: "AI stack", detail: "Tools mapped to usage", href: "#stack", icon: Layers3 },
   { label: "Impact", detail: "Measured outcomes", href: "#impact", icon: Gauge },
   { label: "Contact", detail: "Email / LinkedIn / GitHub", href: "#contact", icon: Mail },
 ];
@@ -29,11 +29,11 @@ export function PortfolioOS() {
             <div className="flex flex-col justify-between gap-6">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs text-cyan-100">
-                  <Sparkles className="h-3.5 w-3.5" /> Recruiter fast path
+                  <Sparkles className="h-3.5 w-3.5" /> Quick review path
                 </div>
-                <h2 className="text-balance text-2xl font-semibold tracking-tight text-white md:text-3xl">No doom scrolling. Pick the signal you need.</h2>
+                <h2 className="text-balance text-2xl font-semibold tracking-tight text-white md:text-3xl">Review the strongest evidence first.</h2>
                 <p className="mt-3 text-sm leading-7 text-slate-400">
-                  This portfolio is still a single-page product, but the important routes are now exposed like a command center: proof, demos, stack, impact, and contact.
+                  Start with shipped systems, measurable impact, live public demos, and the engineering stack behind the work.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-3 text-sm">
@@ -72,7 +72,7 @@ export function PortfolioOS() {
         </div>
       </div>
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3 rounded-[1.75rem] border border-white/10 bg-slate-950/52 p-4 backdrop-blur-xl">
-        <p className="text-sm leading-6 text-slate-400">Company/client projects are summarized safely. Public demos live separately so copyrighted work is not exposed.</p>
+        <p className="text-sm leading-6 text-slate-400">Employer and client projects are described at a safe public level. Live links are provided only for projects that can be shared publicly.</p>
         <Button asChild variant="secondary" size="sm"><a href={profile.resume} download>Download resume</a></Button>
       </div>
     </section>

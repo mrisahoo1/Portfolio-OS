@@ -69,19 +69,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       <div className="mt-7 flex flex-wrap gap-3">
         {isCompanyProject ? (
-          <>
-            <Button variant="secondary" size="sm" asChild><a href="#contact">Request safe walkthrough <ExternalLink className="h-3.5 w-3.5" /></a></Button>
-            <Button variant="secondary" size="sm" asChild><a href="#demo-lab">See public demos <ExternalLink className="h-3.5 w-3.5" /></a></Button>
-            <span className="inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/10 px-4 py-2 text-xs font-medium text-amber-100">
-              <LockKeyhole className="h-3.5 w-3.5" /> No public demo for copyrighted company work
-            </span>
-          </>
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/10 px-4 py-2 text-xs font-medium text-amber-100">
+            <LockKeyhole className="h-3.5 w-3.5" /> Public demo unavailable for employer/client-owned work
+          </span>
         ) : (
           project.links?.map((link) => (
             <Button key={link.label} variant="secondary" size="sm" asChild>
               <a href={link.href} target={link.external ? "_blank" : undefined} rel={link.external ? "noreferrer" : undefined}>{link.label} <ExternalLink className="h-3.5 w-3.5" /></a>
             </Button>
-          )) ?? <Button variant="secondary" size="sm" asChild><a href="#demo-lab">Demo placeholder <ExternalLink className="h-3.5 w-3.5" /></a></Button>
+          )) ?? null
         )}
       </div>
     </motion.article>

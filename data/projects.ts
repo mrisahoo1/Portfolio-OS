@@ -121,39 +121,47 @@ export const moreProjects: Project[] = [
 
 export const publicShowcaseProjects: Project[] = [
   {
-    title: "Cook Your Own Look",
-    domain: "Public GenAI Demo / Avatar Pipeline",
+    title: "Job Search Engine - Adzuna + OpenAI Workbench",
+    domain: "Live Full-stack AI Product / Job Search Automation",
     source: "public",
-    description: "A showable GenAI computer-vision project for avatar generation using diffusion and face-swap models. Add the live demo or walkthrough link when it is ready.",
-    tech: ["RealVisXL", "InSwapper", "Buffalo_l", "Stable Diffusion", "Computer Vision"],
-    impact: ["Demonstrates applied GenAI beyond enterprise-confidential work"],
-    links: [
-      { label: "Demo link placeholder", href: "#contact" },
-      { label: "GitHub placeholder", href: "https://github.com/mrisahoo1", external: true },
+    description:
+      "A full-stack job search and curation workbench for finding relevant roles, ranking them against a resume, preparing tailored application material, and tracking hiring prospects. The app supports an EU-first search workflow, Adzuna-powered live listings, optional OpenAI personalization, explainable fit scoring, resume tailoring, outreach drafts, and prospect tracking.",
+    tech: ["React", "Vite", "Python", "Vercel Functions", "Adzuna API", "OpenAI Responses API", "Resume Parsing", "Fit Scoring"],
+    impact: [
+      "Moves job search from raw listings to an organized application pipeline",
+      "Supports live Adzuna pagination and partial-result handling",
+      "Keeps application submission manual and user-controlled",
     ],
-  },
-  {
-    title: "PTI-MFG",
-    domain: "Public Engineering Demo / Python + React",
-    source: "public",
-    description: "A modular Python/React product-style demo for generating 3D car part files, optimizing backend workflows, and packaging executables.",
-    tech: ["Python", "React", "3D Files", "Backend Workflows", "Packaging"],
-    impact: ["Shows product engineering depth beyond AI-only prototypes"],
     links: [
-      { label: "Demo link placeholder", href: "#contact" },
-      { label: "Architecture note placeholder", href: "#contact" },
+      { label: "Open live product", href: "https://job-search-curation-agent.vercel.app", external: true },
+      { label: "Latest deployment", href: "https://job-search-curation-agent-nrhqtud66-chatgptbdsm-2985s-projects.vercel.app", external: true },
     ],
   },
   {
     title: "Ask My Portfolio",
-    domain: "Public AI Product Surface",
+    domain: "Interactive Portfolio AI / Public Product Surface",
     source: "public",
-    description: "The portfolio itself acts like a lightweight AI product: curated knowledge, prompt chips, typing simulation, and a clean API route stub for future LLM integration.",
+    description:
+      "A portfolio experience with curated knowledge responses, prompt chips, typing simulation, and an API route stub designed for future OpenAI, Gemini, Azure OpenAI, or Bedrock integration.",
     tech: ["Next.js", "TypeScript", "Framer Motion", "Local Knowledge Base", "LLM API Stub"],
     impact: ["Turns a static portfolio into an interactive AI experience"],
-    links: [
-      { label: "Try it on this page", href: "#ask" },
-      { label: "API stub", href: "#demo-lab" },
-    ],
+    links: [{ label: "Try it on this page", href: "#ask" }],
+  },
+  {
+    title: "Cook Your Own Look",
+    domain: "GenAI / Computer Vision",
+    source: "public",
+    description: "A GenAI computer-vision project for avatar generation using diffusion and face-swap models.",
+    tech: ["RealVisXL", "InSwapper", "Buffalo_l", "Stable Diffusion", "Computer Vision"],
+    impact: ["Demonstrates applied GenAI beyond enterprise-confidential work"],
+    links: [{ label: "GitHub profile", href: "https://github.com/mrisahoo1", external: true }],
+  },
+  {
+    title: "PTI-MFG",
+    domain: "Engineering Demo / Python + React",
+    source: "public",
+    description: "A modular Python/React product-style demo for generating 3D car part files, optimizing backend workflows, and packaging executables.",
+    tech: ["Python", "React", "3D Files", "Backend Workflows", "Packaging"],
+    impact: ["Shows product engineering depth beyond AI-only prototypes"],
   },
 ];

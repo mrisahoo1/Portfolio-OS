@@ -9,20 +9,20 @@ export function DemoLab() {
     <section id="demo-lab" className="container-premium py-24">
       <div className="mb-8 grid gap-5 lg:grid-cols-[0.72fr_1.28fr]">
         <SectionHeader
-          eyebrow="Public Demo Lab"
-          title="Company work stays protected. Showable builds get the spotlight."
-          description="Recruiters still need proof they can click. This section is reserved for public demos, walkthroughs, GitHub links, and videos that are safe to share."
+          eyebrow="Public Demos"
+          title="Live projects that can be reviewed without internal access."
+          description="These public-safe builds demonstrate product thinking, AI integration, full-stack delivery, and practical engineering judgment."
         />
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="rounded-[1.75rem] border border-amber-300/20 bg-amber-300/[0.07] p-5 text-amber-50">
             <LockKeyhole className="mb-4 h-5 w-5" />
-            <h3 className="font-semibold">Internal projects</h3>
-            <p className="mt-2 text-sm leading-6 text-amber-100/75">Summarized with impact and safe architecture notes. No copyrighted product demos or private workflows.</p>
+            <h3 className="font-semibold">Employer work</h3>
+            <p className="mt-2 text-sm leading-6 text-amber-100/75">Described through outcomes and safe technical context only. No private product links, data, credentials, or proprietary workflows.</p>
           </div>
           <div className="rounded-[1.75rem] border border-cyan-300/20 bg-cyan-300/[0.07] p-5 text-cyan-50">
             <FlaskConical className="mb-4 h-5 w-5" />
-            <h3 className="font-semibold">Showcase projects</h3>
-            <p className="mt-2 text-sm leading-6 text-cyan-100/75">Add live demos here as public projects become ready. The layout already supports those links.</p>
+            <h3 className="font-semibold">Public builds</h3>
+            <p className="mt-2 text-sm leading-6 text-cyan-100/75">Live deployments and project summaries that hiring teams can inspect directly.</p>
           </div>
         </div>
       </div>
