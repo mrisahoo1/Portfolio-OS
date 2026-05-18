@@ -121,6 +121,23 @@ export const moreProjects: Project[] = [
 
 export const publicShowcaseProjects: Project[] = [
   {
+    title: "RAG Battle Arena",
+    domain: "Live RAG Evaluation / Observability Platform",
+    source: "public",
+    description:
+      "An enterprise-style AI observability and evaluation platform for comparing Retrieval-Augmented Generation pipelines side-by-side. It demonstrates how retrieval architecture choices affect answer quality, evidence selection, latency, cost, hallucination risk, and explainability across Naive Vector RAG, Hybrid Search RAG, Reranked RAG, and Agentic RAG.",
+    tech: ["Next.js", "TypeScript", "FastAPI", "Python", "RAG", "BM25", "Reranking", "pgvector-ready", "Render", "Vercel"],
+    impact: [
+      "Compares four RAG strategies against the same query",
+      "Surfaces relevance, faithfulness, groundedness, precision, recall, and risk metrics",
+      "Includes retrieval inspection and observability views for latency, tokens, cost, and cache behavior",
+    ],
+    links: [
+      { label: "Open live app", href: "https://rag-battle-arena.vercel.app/", external: true },
+      { label: "View GitHub repo", href: "https://github.com/mrisahoo1/RAG-Battle-Arena", external: true },
+    ],
+  },
+  {
     title: "Job Search Engine - Adzuna + OpenAI Workbench",
     domain: "Live Full-stack AI Product / Job Search Automation",
     source: "public",
@@ -165,3 +182,4 @@ export const publicShowcaseProjects: Project[] = [
     impact: ["Shows product engineering depth beyond AI-only prototypes"],
   },
 ];
+
