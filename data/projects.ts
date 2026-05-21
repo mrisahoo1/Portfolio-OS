@@ -150,8 +150,8 @@ export const publicShowcaseProjects: Project[] = [
       "Keeps application submission manual and user-controlled",
     ],
     links: [
-      { label: "Open live product", href: "https://job-search-curation-agent.vercel.app", external: true },
-      { label: "Latest deployment", href: "https://job-search-curation-agent-nrhqtud66-chatgptbdsm-2985s-projects.vercel.app", external: true },
+      { label: "Open live app", href: "https://job-search-curation-agent.vercel.app", external: true },
+      { label: "View GitHub repo", href: "https://github.com/mrisahoo1/Job-Search-Engine-powered-by-Adzuna-and-OpenAI", external: true },
     ],
   },
   {
