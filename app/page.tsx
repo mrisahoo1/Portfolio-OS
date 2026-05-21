@@ -10,6 +10,7 @@ import { ImpactMetrics } from "@/components/ImpactMetrics";
 import { Leadership } from "@/components/Leadership";
 import { Navbar } from "@/components/Navbar";
 import { PortfolioOS } from "@/components/PortfolioOS";
+import { ProofDeck } from "@/components/ProofDeck";
 import { SectionRail } from "@/components/SectionRail";
 import { TechStack } from "@/components/TechStack";
 import { WorkTimeline } from "@/components/WorkTimeline";
@@ -21,6 +22,7 @@ export default function Home() {
       <script type="application/ld+json" suppressHydrationWarning dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }} />
       <Navbar />
       <SectionRail />
+      <ProofDeck />
       <main>
         <Hero />
         <PortfolioOS />
